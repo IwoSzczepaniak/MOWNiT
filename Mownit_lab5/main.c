@@ -81,7 +81,7 @@ int main()
     FILE *file = fopen("C_results.csv","a");
     fprintf(file, "size,naive,better,blas\n");
     
-    for (int n = 5; n<510; n += 10)
+    for (int n = 5; n<510; n += 50)
     {
         C = calloc_2d_array(n,n);
         A = calloc_2d_array(n,n);
