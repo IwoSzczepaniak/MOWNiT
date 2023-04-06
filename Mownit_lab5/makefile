@@ -1,5 +1,5 @@
 all:
-	gcc -o main main.c `gsl-config --cflags --libs`
+	gcc -O0 main.c `gsl-config --cflags --libs` -o main
 test:
 	./main
 clean:
